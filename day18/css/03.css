@@ -1,0 +1,34 @@
+#d1 {
+  width: 10%; }
+
+p {
+  width: 1.11111in; }
+
+p::before {
+  content: "Microsoftyahei";
+  font-family: Ariial; }
+
+p {
+  font: 10px/15px;
+  width: 500px;
+  height: 250px;
+  margin: 9px; }
+
+p::after {
+  content: "1 ate 39 baozis"; }
+
+p {
+  color: #020406; }
+
+div {
+  color: #f4ff1f; }
+
+div {
+  color: black;
+  font-family: Microsoft; }
+
+p {
+  width: 300px; }
+
+div {
+  border-radius: 10%; }

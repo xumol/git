@@ -1,0 +1,35 @@
+.breadcrumb-item+.breadcrumb-item::before{
+    content: "£¾";
+    font-weight: bold;
+}
+.my_img_div{
+    width: 100%;
+}
+.my_img_div>ul>li{
+    margin-right: 0.5rem;
+}
+.my_img_div>ul>li>img{
+    width: 5rem;
+    transition: 1s;
+}
+.my_img_div>ul>li>img:hover{
+    transform: scale(0.8,0.8);
+    border: 1px solid black;
+}
+
+.btn-outline-primary{
+    background-color: transparent;
+    background-image: none;
+    border-color:#ddd ;
+    border-radius: 0;
+    margin: 0.1rem;
+}
+.btn-outline-primary:hover{
+    background-color: transparent;
+    background-image: none;
+    border-color: #0aaled;
+    color: #1940ff;
+}
+.my_count_input_w{
+    width: 20%;
+}

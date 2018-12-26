@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <mate name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <!-- 引入boot文件，引入顺序有要求-->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/beader.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/project-detailk.css">
+    <style>
+        .breadcrumb-item +.breadcrumb-item::before{
+            content: "＞";
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <iframe src="head.html" frameborder="0" scrolling="no" class="my_header"></iframe>
+</header>
+<div class="container">
+<div>
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="#" class="text-dark font-weight-bold my_small">首页</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="#" class="text-dark font-weight-bold my_small">学习用品</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="#" class="text-dark font-weight-bold my_small">笔记本电脑</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="#" class="text-dark font-weight-bold my_small">AppleMacBookAir</a>
+        </li>
+    </ul>
+
+    <div class="row">
+        <!-- 左：大图和小图列表-->
+        <div class="col-md-6 col-sm-12">
+            <img src="http://www.codeboy.com/img/product/md/57b12a31N8f4f75a3.jpg">
+            <div class="mt-2 my_img_div" >
+                <ul class="list-unstyled  d-flex">
+                    <li><img src="http://www.codeboy.com/img/product/sm/57b12a31N8f4f75a3.jpg">
+                    </li>
+                    <li><img src="http://www.codeboy.com/img/product/sm/57b12a31N8f4f75a3.jpg">
+                    </li>
+                    <li>
+                        <img src="http://www.codeboy.com/img/product/sm/57ad8846N64ac3c79.jpg">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <h4 >Apple MacBook Air 13.3英寸笔记本 银色(Core i5 处理器/8GB内存/128GB SSD闪存 MMGF2CH/A)</h4>
+            <h6 class="font-weight-bold">5月焕新季，领券买新机！神券满6000减600！一体成型金属机身，纤薄轻巧，长达12小时续航</h6>
+            <div class="alert alert-secondary">
+
+                <h3 class="text-primary "> <span class="my_gray my_small ">学员售价:</span>￥6988.00</h3>
+                <div class="my_gray my_small ">服务承诺：*退货补运费 *30天无忧退货 *48小时快速退款 *72小时发货</div>
+            </div>
+            <p class="my_gray">
+                客服：
+                <span class="my_gray my_small">
+                联系客服
+               <img src="http://www.codeboy.com/img/product_detail/kefuf.gif" class="mb-4">
+            </span>
+            </p>
+            <div class="clearfix">
+            <div class="my_gray float-left">
+                规格：
+            </div>
+                <div class="float-left w-75">
+               <a href="#" class="my_gray my_small btn btn-sm btn-outline-primary">双核i5/8GB内存/128GB闪存</a>
+                    <a href="#" class="my_gray my_small btn btn-sm btn-outline-primary">双核i5/8GB内存/128GB闪存</a>
+
+                    <a href="#" class="my_gray my_small btn btn-sm btn-outline-primary">双核i5/8GB内存/128GB闪存</a>
+                    <a href="#" class="my_gray my_small btn btn-sm btn-outline-primary">双核i5/8GB内存/128GB闪存</a>
+                    </div>
+            </div>
+            <div class="clearfix">
+                <div class="float-left my_gray">数量:&nbsp;&nbsp;&nbsp;</div>
+                <div class="float-left d-flex align-items-center">
+                    <button class="btn border-0 rounded-0">-</button>
+                    <input type="text" value="1" class="mr-1 ml-1 text-center my_count_input_w">
+                    <button class="btn border-0 rounded-0">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <iframe src="foot.html" frameborder="0" scrolling="no" class="my_footer"></iframe>
+</footer>
+</body>
+</html>

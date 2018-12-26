@@ -1,0 +1,30 @@
+.bg-menubar{
+    background: linear-gradient(to bottom, #cddaf0, #94a2e0);
+}
+input{
+    border: none
+}
+.w_input{
+    width: 13%;
+    text-align: center;
+    padding: 0;
+}
+.my_img6{
+    transform: 1s;
+}
+.my_img6:hover{
+    transform: scale(1.1,1.1);
+}
+.my_input-w{
+    width: 0.6rem;
+   padding:0;
+}
+.input-group-text{
+    width: 40%;
+}
+.my_card-btn{
+    width: 1rem;
+}
+.list-group-item{
+    border-top: 1px dashed #080808;
+}

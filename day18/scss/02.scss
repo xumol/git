@@ -1,0 +1,84 @@
+$myblue:#0aaled;
+$fontcolor:#fff;
+$myheight:2.5rem;
+.mybtn{
+  display: block;
+  background: $myblue;
+  color: $fontcolor;
+  text-decoration: none;
+  width: 8rem;height: $myheight;
+  text-align: center;line-height: normal;
+  border-radius: 2rem;
+  font-size: 8rem;
+  &:hover{color: #f10215}
+}
+
+div.main{
+  width: 200px;height: 200px;
+  background: #f00;
+  transform: {property:all;duration:2s;timing-function:linear;};
+  &:hover{
+    background:#ff0;
+    border-radius: 50%;
+
+  }
+}
+@import "mycolor";
+p.p1{width:$width;height: $height;}
+
+
+@mixin my_shadow{
+  box-shadow: 0 0 50px 10px gray;
+}
+div{
+  @include my_shadow;
+}
+p{@include my_shadow}
+
+@mixin my_rounded{
+  border-radius: 2px;
+}
+ul{
+  list-style: none;
+  li{
+    padding: 5px;
+    border: 1px solid #ff0;
+    @include my_rounded;
+    a{
+      color:gray;
+      text-decoration: none;
+      &:hover{
+        color: #f00;
+      }
+    }
+  }
+}
+
+@mixin lin-colors($normal,$hover,$visited){
+  color: $normal;
+  &:hover{
+    color: $hover;}
+  &:visited{color: $visited}
+}
+uil li a{@include lin-colors(#f00,#0f0,#000)}
+#content a{
+  @include lin-colors(#f00,#00f,#000)
+}
+.my_round{
+  border: 1px solid #f00;
+  border-radius: 50%;
+}
+.rounded-shadow{
+  @extend .my_round;
+  box-shadow: 0 0 10px;
+}
+.my_border{
+  border: 1px solid transparent;
+  width: 400px;
+  margin-left: 20px;
+}
+.my_bottom_border{
+  @extend .my_border;
+  border-bottom-color: #f00;
+  &:hover{border-bottomr-color:#00f }
+}

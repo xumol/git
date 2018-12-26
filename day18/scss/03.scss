@@ -1,0 +1,47 @@
+$my-width:5%;
+$my-max-width:$my-width*2;
+$size:$my-max-width+$my-width;
+#d1{
+  width: $size - $my-width;
+}
+p{
+  width: 1in+8pt;
+
+}
+p::before{
+  content: "Microsoft"+yahei;
+  font-family: A+"riial";
+}
+p{
+  font:10px/15px;
+  $width:1000px;
+  width: $width/2;
+  height:(500px/2);
+  margin: 5px+8px/2px;
+}
+p::after{
+  content: "1 ate #{16+23} baozis";
+}
+p{
+  color: #010203+#010203;
+}
+div{
+  color: hsl(63, 100%, 56%)
+}
+div{
+  color: hsl(120,50%,0%);
+  font-family:unquote("Microsoft");
+}
+@function  get_width(){
+   $max-width:400px;
+  $min-width:100px;
+  @return  $max-width - $min-width;
+}
+p{
+  width:get_width();
+}
+div{
+  @if 1+1==4{border-radius:50%}
+  @else if(1-1==-1){border-radius:30%}
+  @else {border-radius: 10%}
+}
